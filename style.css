@@ -1,0 +1,288 @@
+/* Css Reset */
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+section {
+    scroll-margin: 50px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(10, 10, 138);
+    color: white;
+    box-shadow: 3px 3px 4px rgb(86, 75, 237);
+}
+
+.nav {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    margin: 10px;
+    list-style: none;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav ul li a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.nav-logo {
+    margin: 20px;
+    font-size: 20px;
+}
+
+.nav-input {
+    font-size: 20px;
+    margin: 15px;
+}
+
+.nav-input input {
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.Overview {
+    background-image: url(img/hero_image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+}
+
+.overview-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 10px;
+    text-align: center;
+}
+
+.overview-text h1 {
+    margin: 20px;
+    font-size: 100px;
+}
+
+.overview-text h3 {
+    margin: 20px;
+    font-size: 30px;
+}
+
+.overview-text p {
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.music {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(5, 5, 69);
+}
+
+
+.music-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.music-text h1 {
+    margin: 20px;
+    font-size: 40px;
+}
+
+.music-btn {
+    padding: 10px;
+    color: white;
+    background-color: rgb(222, 28, 28);
+}
+
+.music-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-text p {
+    font-size: 20px;
+}
+
+.color {
+    color: black;
+}
+
+.music-btn2 {
+    padding: 10px;
+    color: white;
+    margin: 20px;
+    background-color: rgb(28, 31, 222);
+}
+
+.video {
+    background-image: url(img/video.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 50px;
+}
+
+.video-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 50px;
+}
+
+.video-text h1 {
+    margin: 20px;
+    font-size: 50px;
+}
+
+.video-text h2 {
+    margin: 20px;
+}
+
+.gift {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.gift-text {
+    padding: 30px;
+}
+
+.gift-text p {
+    margin: 10px 0px;
+}
+
+.footer {
+    background-color: rgb(5, 5, 69);
+    color: white;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer h3 {
+    margin: 10px 0px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid white;
+}
+
+.footer ul li {
+    list-style: none;
+}
+
+footer {
+    background-color: rgb(11, 11, 118);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width:860px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        position: relative;
+        top: 0;
+    }
+
+    .overview-text h1 {
+        font-size: 60px;
+    }
+
+    .overview-text h3 {
+        font-size: 25px;
+    }
+
+    .overview-text p {
+        text-align: center;
+        font-size: 15px;
+    }
+
+}
+
+/* @media only screen and (max-width:505px) {
+    .overview-text h1 {
+        font-size: 40px;
+    }
+
+    .overview-text h3 {
+        font-size: 22px;
+    }
+
+    .overview-text p {
+        text-align: center;
+        font-size: 12px;
+    }
+} */
+@media only screen and (max-width:400px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .overview-text h1 {
+        font-size: 25px;
+    }
+
+    .overview-text h3 {
+        font-size: 20px;
+    }
+
+    .overview-text p {
+        text-align: center;
+        font-size: 15px;
+    }
+}
